@@ -4,7 +4,18 @@ platform :ios, '8.0'
 
 target 'ComponentLib_Example' do
   pod 'ComponentLib', :path => '../'
-
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'DZNEmptyDataSet', '~> 1.8.1'
+  pod 'Reachability', '~> 3.2'
+  pod 'ActionSheetPicker-3.0', '~> 2.3.0'
+  pod 'Toast', '~> 4.0.0'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'BANetManager', '~> 2.3.10'
+  pod 'MJRefresh', '~> 3.1.15.3'
+  pod 'SDWebImage', '~> 4.4.0'
+  pod 'Masonry', '~> 1.1.0'
+  pod 'WechatOpenSDK', '~> 1.8.3'
   target 'ComponentLib_Tests' do
     inherit! :search_paths
 
