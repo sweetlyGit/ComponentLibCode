@@ -1,0 +1,16 @@
+PODS:
+  - ComponentLib (0.1.0)
+
+DEPENDENCIES:
+  - ComponentLib (from `../`)
+
+EXTERNAL SOURCES:
+  ComponentLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ComponentLib: c3ddaa34a0dd1cc850870fd7339849bf95003e04
+
+PODFILE CHECKSUM: bda8306b64f6c4fe0da08e4262087705c4d99567
+
+COCOAPODS: 1.5.3

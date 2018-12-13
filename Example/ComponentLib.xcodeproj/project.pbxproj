@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13BD33D7A822EFEB23591458 /* ComponentLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ComponentLib.podspec; path = ../ComponentLib.podspec; sourceTree = "<group>"; };
-		4BA5F743FE95413F4DC8F705 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		13BD33D7A822EFEB23591458 /* ComponentLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ComponentLib.podspec; path = ../ComponentLib.podspec; sourceTree = "<group>"; };
+		4BA5F743FE95413F4DC8F705 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		581C9661EB45D45AB8A38F0D /* Pods-ComponentLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentLib_Example/Pods-ComponentLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ComponentLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComponentLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BBFD48F88E313BC85491972 /* Pods_ComponentLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComponentLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DAEEAF9281A106C0391FF93 /* Pods-ComponentLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentLib_Example/Pods-ComponentLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CE040DCCB8118C55699A1B90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CE040DCCB8118C55699A1B90 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D3ED8E9D543462C3DEC02AE0 /* Pods_ComponentLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComponentLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5AC0096B68BF04391ED86E /* Pods-ComponentLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentLib_Tests/Pods-ComponentLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F70D7FEB1E1082C08DF3D480 /* Pods-ComponentLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComponentLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ComponentLib_Tests/Pods-ComponentLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +247,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = sweetlyGit;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 7S46JX7Q8W;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -497,12 +501,17 @@
 			baseConfigurationReference = 9DAEEAF9281A106C0391FF93 /* Pods-ComponentLib_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7S46JX7Q8W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComponentLib/ComponentLib-Prefix.pch";
 				INFOPLIST_FILE = "ComponentLib/ComponentLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.carowner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = yyouCarOwnerDevelopment;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -512,12 +521,17 @@
 			baseConfigurationReference = 581C9661EB45D45AB8A38F0D /* Pods-ComponentLib_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7S46JX7Q8W;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ComponentLib/ComponentLib-Prefix.pch";
 				INFOPLIST_FILE = "ComponentLib/ComponentLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yonyou.carowner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = yyouCarOwnerDevelopment;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
