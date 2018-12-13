@@ -1,9 +1,9 @@
 {
   "name": "ComponentLib",
-  "version": "0.1.0",
-  "summary": "A short description of ComponentLib.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/sweetlyGit/ComponentLib",
+  "version": "1.0.0",
+  "summary": "公用组件测试",
+  "description": "组件化测试.",
+  "homepage": "https://github.com/sweetlyGit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,46 @@
     "sweetlyGit": "2235861673@qq.com"
   },
   "source": {
-    "git": "https://github.com/sweetlyGit/ComponentLib.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/sweetlyGit/ComponentLibCode.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ComponentLib/Classes/**/*"
+  "source_files": "ComponentLib/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.2.1"
+    ],
+    "DZNEmptyDataSet": [
+      "~> 1.8.1"
+    ],
+    "Reachability": [
+      "~> 3.2"
+    ],
+    "ActionSheetPicker-3.0": [
+      "~> 2.3.0"
+    ],
+    "Toast": [
+      "~> 4.0.0"
+    ],
+    "MBProgressHUD": [
+      "~> 1.1.0"
+    ],
+    "BANetManager": [
+      "~> 2.3.10"
+    ],
+    "MJRefresh": [
+      "~> 3.1.15.3"
+    ],
+    "SDWebImage": [
+      "~> 4.4.0"
+    ],
+    "Masonry": [
+      "~> 1.1.0"
+    ],
+    "WechatOpenSDK": [
+      "~> 1.8.3"
+    ]
+  }
 }
