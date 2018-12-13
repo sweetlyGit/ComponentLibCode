@@ -5,7 +5,6 @@
 # Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
 #
-
 Pod::Spec.new do |s|
   s.name             = 'ComponentLib'
   s.version          = '1.0.0'
@@ -18,14 +17,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                        组件化测试.
                        DESC
 
   s.homepage         = 'https://github.com/sweetlyGit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sweetlyGit' => '2235861673@qq.com' }
-  s.source           = { :git => 'https://github.com/sweetlyGit/ComponentLibCode.git, :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/sweetlyGit/ComponentLibCode.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
