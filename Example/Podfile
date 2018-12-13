@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ComponentLib_Example' do
+  pod 'ComponentLib', :path => '../'
+
+  target 'ComponentLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
